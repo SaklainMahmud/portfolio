@@ -111,19 +111,12 @@ export default function Contact() {
             <form
             name="contact"
                 method="POST"
-                action="/thank-you"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
                 className="space-y-6"
             >
             <input type="hidden" name="form-name" value="contact" />
-             <p className="hidden">
-               <label>
-                 Don’t fill this out: <input name="bot-field" />
-               </label>
-             </p>
-
-            <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="bot-field" />
               <div className="grid md:grid-cols-2 gap-4">
                 <input
                   type="text"
@@ -171,4 +164,5 @@ export default function Contact() {
     </section>
   );
 }
+
 
