@@ -33,7 +33,11 @@ export default function Contact() {
 
             <div className="space-y-4">
               {/* Email */}
-              <div className="flex items-center gap-4 border border-white/10 rounded-xl p-5 hover:border-yellow-400/40 transition">
+              <a
+                href="mailto:saklainmahmud556@gmail.com"
+                className="flex items-center gap-4 border border-white/10 rounded-xl p-5
+                hover:border-yellow-400/40 transition group"
+              >
                 <div className="w-12 h-12 flex items-center justify-center rounded-lg bg-yellow-500/20 text-yellow-400">
                   <Mail size={20} />
                 </div>
@@ -41,10 +45,14 @@ export default function Contact() {
                   <p className="text-sm text-gray-400">Email</p>
                   <p className="font-medium">saklainmahmud556@gmail.com</p>
                 </div>
-              </div>
+              </a>
 
               {/* Phone */}
-              <div className="flex items-center gap-4 border border-white/10 rounded-xl p-5 hover:border-yellow-400/40 transition">
+              <a
+                href="tel:+8801863784443"
+                className="flex items-center gap-4 border border-white/10 rounded-xl p-5
+                hover:border-yellow-400/40 transition group"
+              >
                 <div className="w-12 h-12 flex items-center justify-center rounded-lg bg-yellow-500/20 text-yellow-400">
                   <Phone size={20} />
                 </div>
@@ -52,7 +60,7 @@ export default function Contact() {
                   <p className="text-sm text-gray-400">Phone</p>
                   <p className="font-medium">+880 1863 784 443</p>
                 </div>
-              </div>
+              </a>
 
               {/* Availability */}
               <div className="flex items-center gap-4 border border-white/10 rounded-xl p-5 hover:border-yellow-400/40 transition">
@@ -103,9 +111,18 @@ export default function Contact() {
             <form
             name="contact"
                 method="POST"
+                action="/thank-you"
                 data-netlify="true"
+                data-netlify-honeypot="bot-field"
                 className="space-y-6"
             >
+            <input type="hidden" name="form-name" value="contact" />
+             <p className="hidden">
+               <label>
+                 Don’t fill this out: <input name="bot-field" />
+               </label>
+             </p>
+
             <input type="hidden" name="form-name" value="contact" />
               <div className="grid md:grid-cols-2 gap-4">
                 <input
@@ -154,3 +171,4 @@ export default function Contact() {
     </section>
   );
 }
+
