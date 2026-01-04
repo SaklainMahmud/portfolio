@@ -3,15 +3,15 @@ import Reveal from "./Reveal";
 const skills = [
   {
     category: "Programming Languages",
-    items: ["C++", "C#", "Java", "Python"],
+    items: ["JavaScript", "C++", "C#", "Java", "Python"],
   },
   {
     category: "Tools & Software",
-    items: ["Git", "GitHub", "Selenium", "Microsoft Office"],
+    items: ["Git", "GitHub", "Vite", "Postman", "Thunder Client"],
   },
   {
     category: "Technical Skills",
-    items: ["React", "Tailwind CSS", "HTML & CSS", "JavaScript"],
+    items: ["React", "Tailwind CSS", "HTML & CSS", "Axios", "REST APIs", "Node.js", "Express.js", "JWT Authentication"],
   },
 ];
 
@@ -70,3 +70,4 @@ export default function Skills() {
     </section>
   );
 }
+
