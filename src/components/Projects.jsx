@@ -8,7 +8,6 @@ import libraryImg from "../assets/projects/library.png";
 
 const projects = [
   {
-    {
     title: "ProjectFlow -- Project Management App",
     description: "A full-stack project management app using React, Node.js, and MongoDB with JWT authentication.",
     image: ProjectFlow,
@@ -121,5 +120,6 @@ export default function Projects() {
     </section>
   );
 }
+
 
 
