@@ -15,6 +15,7 @@ const projects = [
     github: "https://github.com/SaklainMahmud/ProjectFlow",
     tech: ["React", "JavaScript", "REST API", "JWT", "Axios", "Node.js", "MongoDB", "Full-Stack"],
   },
+  {
     title: "Job Marketplace Website",
     description: "A full-stack job marketplace platform.",
     image: jobImg,
@@ -120,4 +121,5 @@ export default function Projects() {
     </section>
   );
 }
+
 
