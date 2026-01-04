@@ -1,13 +1,20 @@
 import Reveal from "./Reveal";
 
 // Images (FIXED variable names)
+import ProjectFlow from "../assets/projects/ProjectFlow.png";
 import jobImg from "../assets/projects/Job.png";
 import eShopImg from "../assets/projects/e-shop.png";
-import skyGateImg from "../assets/projects/SkyGate.png";
 import libraryImg from "../assets/projects/library.png";
 
 const projects = [
   {
+    {
+    title: "ProjectFlow -- Project Management App",
+    description: "A full-stack project management app using React, Node.js, and MongoDB with JWT authentication.",
+    image: ProjectFlow,
+    github: "https://github.com/SaklainMahmud/ProjectFlow",
+    tech: ["React", "JavaScript", "REST API", "JWT", "Axios", "Node.js", "MongoDB", "Full-Stack"],
+  },
     title: "Job Marketplace Website",
     description: "A full-stack job marketplace platform.",
     image: jobImg,
@@ -20,13 +27,6 @@ const projects = [
     image: eShopImg,
     github: "https://github.com/SaklainMahmud/E-Shop",
     tech: ["C#"],
-  },
-  {
-    title: "SkyGate Airport Simulation",
-    description: "A simulation of airport operations.",
-    image: skyGateImg,
-    github: "https://github.com/SaklainMahmud/SkyGate-Airport-Simulation",
-    tech: ["C++", "OpenGL"],
   },
   {
     title: "Library Management System",
@@ -120,3 +120,4 @@ export default function Projects() {
     </section>
   );
 }
+
